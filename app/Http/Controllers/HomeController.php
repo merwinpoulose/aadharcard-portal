@@ -25,7 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-
         if(Auth::user()->user_type == 'super-admin')
             return view('home');
         elseif(Auth::user()->user_type == 'admin')
